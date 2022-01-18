@@ -13,7 +13,7 @@ export const Header = () => {
           </div>
           <nav className={styles.menu}>
             <ul className={styles.menu_list}>
-              <li className={styles.menu_item}><a href="">Home</a></li>
+              <li className={`${styles.menu_item} ${styles.menu_item_active}`}><a href="">Home</a></li>
               <li className={styles.menu_item}><a href="">About</a></li>
               <li className={styles.menu_item}><a href="">Skills</a></li>
               <li className={styles.menu_item}><a href="">Portfolio</a></li>

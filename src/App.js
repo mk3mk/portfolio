@@ -1,12 +1,16 @@
 import './App.css';
-import {Header} from "./portfolio/components/header/Header";
-import Home from "./portfolio/components/Home/Home";
+import {MyLatestProjects} from "./portfolio/components/myLatestProjects/MyLatestProjects";
+import {MySkills} from "./portfolio/components/mySkills/MySkills";
+import {CallToAction} from "./portfolio/components/callToAction/CallToAction";
+import {Contacts} from "./portfolio/components/contacts/Contacts";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Home/>
+      <MySkills/>
+      <MyLatestProjects/>
+      <CallToAction/>
+      <Contacts/>
     </div>
   );
 }

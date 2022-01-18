@@ -1,0 +1,88 @@
+.btn {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.project_btn {
+  margin-top: 35px;
+  transition: .7s;
+
+  a {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: .2px;
+    position: relative;
+    z-index: 2;
+    padding: 0 23px;
+    height: 40px;
+    line-height: 34px;
+
+    &:hover {
+      border: 2px solid rgb(249, 0, 77);
+      transform: translateY(-3px);
+      background: rgb(249, 0, 77);
+      color: #fff;
+    }
+  }
+}
+
+.view-more-btn {
+  margin-top: 60px;
+  text-align: center;
+
+  a {
+    border: 2px solid rgb(249, 0, 77);
+    background: #f9004d;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 15px 40px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: .3s;
+
+    &:hover {
+      background: transparent;
+      color: rgb(249, 0, 77);
+      box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.call-to-action-btn {
+  margin-top: 30px;
+  border: 2px solid #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 15px 40px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: .3s;
+  background-color: transparent;
+  &:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #f9004d;
+  }
+}
+
+.contact-btn {
+  border: 2px solid #f9004d;
+  background: #f9004d;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 45px;
+  border-radius: 6px;
+  transition: .3s;
+  font-weight: 500;
+  &:hover {
+    background: transparent;
+    color: #f9004d;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,.1);
+    transform: translateY(-5px);
+  }
+}

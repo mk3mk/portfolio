@@ -1,11 +1,11 @@
 .header {
     width: 100%;
     padding: 0 50px;
-    background-color: #101010;
-    /*background-color: transparent;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*z-index: 999;*/
+    /*background-color: #101010;*/
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 999;
 }
 
 .header_wrapper {
@@ -55,7 +55,7 @@
     color: #fff;
 }
 
-.menu_item a::after {
+.menu_item_active a::after {
     position: absolute;
     content: "";
     left: 0;

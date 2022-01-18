@@ -1,5 +1,6 @@
 .home {
     background-color: #101010;
+    background-image: url("https://trydo.rainbowit.net/assets/images/bg/bg-image-28.jpg");
     height: 830px;
 }
 
@@ -9,8 +10,7 @@
     max-width: 1260px;
     width: 100%;
     height: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
