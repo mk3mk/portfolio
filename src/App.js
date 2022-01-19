@@ -3,6 +3,7 @@ import {MyLatestProjects} from "./portfolio/components/myLatestProjects/MyLatest
 import {MySkills} from "./portfolio/components/mySkills/MySkills";
 import {CallToAction} from "./portfolio/components/callToAction/CallToAction";
 import {Contacts} from "./portfolio/components/contacts/Contacts";
+import {Footer} from "./portfolio/components/footer/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <MyLatestProjects/>
       <CallToAction/>
       <Contacts/>
+      <Footer/>
     </div>
   );
 }

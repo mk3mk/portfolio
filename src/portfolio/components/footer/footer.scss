@@ -1,0 +1,25 @@
+.footer {
+  background: #101010;
+  padding: 30px 0;
+  &_wrapper {
+    padding: 0 50px;
+    .logo {
+      text-align: left;
+      width: 60px;
+      height: 60px;
+      background-color: #282c34;
+      img {
+        max-width: 100%;
+        border: none;
+      }
+    }
+    .text {
+      text-align: right;
+      p {
+        color: #c6c9d8;
+        font-size: 14px;
+        opacity: .75
+      }
+    }
+  }
+}
