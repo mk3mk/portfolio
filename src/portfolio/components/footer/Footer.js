@@ -8,7 +8,7 @@ import telegram from './../../assets/socialIcon/bx_bxl-telegram.png'
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer_wrapper">
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -36,6 +36,6 @@ export const Footer = () => {
         </div>
       </div>
 
-    </div>
+    </footer>
   );
 };
