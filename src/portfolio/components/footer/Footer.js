@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.scss'
-import {SocialIcon} from "../../assets/socialIcon/SocialIcon";
+import {SocialIcon} from "../../commons/socialIcon/SocialIcon";
 import facebook from './../../assets/socialIcon/bx_bxl-facebook.png'
 import linkedIn from './../../assets/socialIcon/bx_bxl-linkedin.png'
 import instagram from './../../assets/socialIcon/bx_bxl-instagram.png'

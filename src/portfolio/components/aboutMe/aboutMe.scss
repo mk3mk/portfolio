@@ -1,0 +1,26 @@
+.about {
+  background: #191919;
+  padding: 120px 0;
+  .thumbnail {
+    position: relative;
+    z-index: 2;
+    img {
+      border-radius: 8px;
+      box-shadow: 0 25px 65px rgba(0,0,0,.1);
+    }
+  }
+  .inner {
+    text-align: left;
+    .sub_title {
+      padding: 0;
+    }
+  }
+  .section_info {
+    margin-top: 30px;
+    .tabs {
+      display: flex;
+      margin: 0 -20px;
+      flex-wrap: wrap;
+    }
+  }
+}
