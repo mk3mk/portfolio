@@ -4,7 +4,7 @@ import './../../commons/button/button.scss'
 
 export const Contacts = () => {
   return (
-    <div className="contact">
+    <div id="contacts" className="contact">
       <div className="contact_form">
         <div className="container">
           <div className="row align-items-start">

@@ -2,8 +2,9 @@ import React from 'react';
 import './home.scss'
 
 export const Home = ({urlImage}) => {
+
   return (
-    <div className="home " style={{ backgroundImage: `url(${urlImage})` }}>
+    <div id="home" className="home " style={{ backgroundImage: `url(${urlImage})` }}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

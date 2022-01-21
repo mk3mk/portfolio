@@ -10,7 +10,7 @@ import homeImg from './portfolio/assets/home/bg-home-image.jpg'
 import aboutImg from './portfolio/assets/aboutMe/about-image.jpg'
 import {Header} from "./portfolio/components/header/Header";
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
       <Header/>
@@ -24,5 +24,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

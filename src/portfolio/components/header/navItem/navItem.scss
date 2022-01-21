@@ -1,12 +1,14 @@
 .nav_item {
   margin: 0 15px;
   position: relative;
+
   a {
     color: #fff;
     font-size: 16px;
     font-weight: 500;
     padding: 20px 0;
     display: inline-block;
+
     &::after {
       position: absolute;
       content: "";
@@ -20,7 +22,7 @@
   }
 }
 
-.selected {
+.is-current {
   a {
     &::after {
       width: 100%;

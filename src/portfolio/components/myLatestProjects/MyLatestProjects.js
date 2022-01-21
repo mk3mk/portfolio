@@ -6,7 +6,7 @@ import {Button} from "../../commons/button/Button";
 
 export const MyLatestProjects = () => {
   return (
-    <div className="portfolio">
+    <div id="projects" className="portfolio">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

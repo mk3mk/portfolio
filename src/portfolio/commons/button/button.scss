@@ -97,7 +97,7 @@
   border-radius: 6px;font-size: 14px;
   position: relative;
   z-index: 2;
-  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  transition: all .4s ease-in-out 0s;
   &:hover {
     border-color: #f9004d;
     transform: translateY(-3px);

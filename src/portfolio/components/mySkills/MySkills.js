@@ -16,7 +16,7 @@ import {Skill} from "./skill/Skill";
 
 export const MySkills = () => {
   return (
-    <div className="my_skills">
+    <div id="skills" className="my_skills">
       <div className="container">
         <div className="row">
           <Title title={"My professional skills"}
