@@ -2,7 +2,7 @@ import React from 'react';
 import './contacts.scss'
 import './../../commons/button/button.scss'
 
-export const Contacts = () => {
+export const Contacts = ({urlImg}) => {
   return (
     <div id="contacts" className="contact">
       <div className="contact_form">
@@ -14,7 +14,7 @@ export const Contacts = () => {
                 <p className="description">
                   I am available for freelance work. Connect with me via phone:
                   <a href="tel:+375292592648"> 8 029 259-26-48 </a>
-                   or email:
+                  or email:
                   <a href="mailto:alexeynikinitin@yandex.by"> alexeynikinitin@yandex.by </a>
                 </p>
               </div>
@@ -30,15 +30,15 @@ export const Contacts = () => {
                     <input type="text" id="item03" name="subject" placeholder="Write a Subject" value={""}/>
                   </label>
                   <label htmlFor="item04">
-                    <textarea type="text" id="item04" name="message" placeholder="Your Message" value={""}/>
+                    <textarea id="item04" name="message" placeholder="Your Message" value={""}/>
                   </label>
                   <button type="submit" value="submit" name="submit" className="btn contact-btn">Submit</button>
                 </form>
               </div>
             </div>
-            <div className="col-lg-6 order-1 order-lg-2">
+            <div className="col-lg-6 order-1 order-lg-2 ">
               <div className="thumbnail">
-                <img src="" alt="photo"/>
+                <img src={urlImg} alt="photo"/>
               </div>
             </div>
           </div>
@@ -48,4 +48,3 @@ export const Contacts = () => {
   );
 }
 
-// https://trydo.rainbowit.net/assets/images/about/about-9.jpg

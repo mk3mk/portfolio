@@ -1,6 +1,9 @@
 .tab_panel {
   display: none;
   height: 238px;
+  @media (max-width: 992px) {
+    margin: 0 113px;
+  }
   ul {
     padding: 20px 0 0 0;
     margin: 0;

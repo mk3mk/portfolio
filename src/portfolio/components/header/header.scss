@@ -6,7 +6,9 @@
   width: 100%;
   background: transparent;
   transition: .3s;
-
+  @media (max-width: 992px) {
+    display: none;
+  }
   &_wrapper {
     padding: 20px 0;
     transition: .3s;

@@ -4,7 +4,9 @@
   width: 100%;
   padding-top: 35%;
   margin-top: 40px;
-
+  @media (max-width: 1200px) {
+    min-height: 440px;
+  }
   .thumbnail-inner {
     transition: transform .28s ease;
     z-index: 9;
@@ -87,12 +89,17 @@
     padding: 0;
     right: 40px;
     margin: 0 auto;
-
+    @media (max-width: 1200px) {
+      max-width: 90%;
+      left: 0;
+      right: 0;
+    }
     .inner {
       p {
         color: #c6c9d8;
         font-size: 14px;
         line-height: 30px;
+
       }
 
       h4 {

@@ -1,6 +1,10 @@
 .my_skills {
   background: #101010;
   padding: 120px 0;
+  height: 100vh;
+  @media (max-width: 1200px) {
+    height: 100%;
+  }
   &_section {
     margin: 40px 0 0 0;
     list-style: none;
@@ -9,6 +13,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    @media (max-width: 1200px) {
+      margin: 25px 0 0 0;
+    }
   }
 }
 

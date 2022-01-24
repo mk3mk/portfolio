@@ -9,7 +9,7 @@ export const AboutMe = ({urlImg}) => {
     {id: 1, title: "Main Skills", selected: true},
     {id: 2, title: "Awards", selected: false},
     {id: 3, title: "Experience", selected: false},
-    {id: 4, title: "Education & Certification", selected: false},
+    {id: 4, title: "Education", selected: false},
   ]
   const [tabs, setTabs] = useState(initialTabs)
   const changeSelectTabCallback = (id, selected) => {

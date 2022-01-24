@@ -29,7 +29,7 @@ export const Footer = () => {
           <div className="col-lg-4 col-md-6 col-sm-6 col-12">
             <div className="text">
               <p>
-                Copyright © 2021 Rainbow-Themes. All Rights Reserved.
+                Alexey Nikitin
               </p>
             </div>
           </div>

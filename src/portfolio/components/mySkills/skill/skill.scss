@@ -4,14 +4,20 @@
   text-align: center;
   filter: grayscale(90%);
   transition: .3s;
-
+  @media (max-width: 1200px) {
+    padding: 25px;
+    flex-basis: 26%;
+  }
   &_img {
     max-height: 110px;
     max-width: 150px;
     cursor: pointer;
     border: 0;
     vertical-align: middle;
-
+    @media (max-width: 1200px) {
+      max-height: 100px;
+      max-width: 140px;
+    }
   }
   &:hover {
     transform: scale(1.1);

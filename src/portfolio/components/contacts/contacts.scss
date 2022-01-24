@@ -1,10 +1,14 @@
 .contact {
     background: #191919;
     padding: 120px 0;
+    height: 100vh;
     &_title {
         margin-bottom: 50px;
         margin-top: -20px;
         text-align: left;
+        @media (max-width: 1200px) {
+            margin-bottom: 30px;
+        }
         h2 {
             margin-bottom: 8px;
             color: #fff;
@@ -52,6 +56,9 @@
 }
 
 .thumbnail {
+    display: flex;
+    align-items: center;
+    height: 670px;
     img {
         border-radius: 5px;
         box-shadow: 0 25px 65px rgba(0,0,0,.1);
