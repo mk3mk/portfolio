@@ -1,7 +1,7 @@
 import React from 'react';
 import './tabPanel.scss'
 
-export const TabPanel = ({clicked, tabs}) => {
+export const TabPanel = ({tabs}) => {
 
   return (
     <>
@@ -29,7 +29,7 @@ export const TabPanel = ({clicked, tabs}) => {
       <div className={`tab_panel ${tabs[1].selected ? "visible" : ""}`}>
         <ul>
           <li>
-            <span>Awwwards.com</span>
+            <span>Awards.com</span>
             <span> - Winner</span>
             <p>2019 - 2020</p>
           </li>

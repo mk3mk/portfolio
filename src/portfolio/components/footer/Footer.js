@@ -5,6 +5,7 @@ import facebook from './../../assets/socialIcon/bx_bxl-facebook.png'
 import linkedIn from './../../assets/socialIcon/bx_bxl-linkedin.png'
 import instagram from './../../assets/socialIcon/bx_bxl-instagram.png'
 import telegram from './../../assets/socialIcon/bx_bxl-telegram.png'
+import logo from './../../assets/header-footer/logo-red.png'
 
 export const Footer = () => {
   return (
@@ -14,16 +15,15 @@ export const Footer = () => {
           <div className="col-lg-4 col-md-6 col-sm-6 col-12">
             <div className="logo">
               <a href="#">
-                <img src="" alt=""/>
+                <img src={logo} alt="Logo"/>
               </a>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-6 col-12">
             <ul className="social_share d-flex justify-content-center">
-              <SocialIcon urlIcon={facebook}/>
-              <SocialIcon urlIcon={linkedIn}/>
-              <SocialIcon urlIcon={instagram}/>
-              <SocialIcon urlIcon={telegram}/>
+              <SocialIcon urlIcon={linkedIn} urlSocial={"https://www.linkedin.com/in/alexeinikitin/"}/>
+              <SocialIcon urlIcon={instagram} urlSocial={"https://instagram.com/alexalex_2576?utm_medium=copy_link"}/>
+              <SocialIcon urlIcon={facebook} urlSocial={"#"}/>
             </ul>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -35,7 +35,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-
     </footer>
   );
 };

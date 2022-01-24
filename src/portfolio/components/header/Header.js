@@ -6,7 +6,7 @@ import logo from './../../assets/header-footer/logo-red.png'
 import facebook from "../../assets/socialIcon/bx_bxl-facebook.png";
 import linkedIn from "../../assets/socialIcon/bx_bxl-linkedin.png";
 import instagram from "../../assets/socialIcon/bx_bxl-instagram.png";
-import telegram from "../../assets/socialIcon/bx_bxl-telegram.png";
+// import telegram from "../../assets/socialIcon/bx_bxl-telegram.png";
 import {Button} from "../../commons/button/Button";
 import Scrollspy from 'react-scrollspy'
 

@@ -38,7 +38,7 @@ export const MySkills = () => {
           <div className="col-lg-12">
             <ul className="my_skills_section">
               {
-                initialSkills.map(s => <Skill urlImg={s}/> )
+                initialSkills.map((s,i) => <Skill urlImg={s} key={`${i}-${s}`}/> )
               }
             </ul>
           </div>

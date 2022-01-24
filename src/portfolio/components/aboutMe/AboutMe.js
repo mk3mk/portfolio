@@ -51,7 +51,7 @@ export const AboutMe = ({urlImg}) => {
                       })}
                     </ul>
                   </div>
-                  <TabPanel clicked={true} tabs={tabs}/>
+                  <TabPanel tabs={tabs}/>
                 </div>
               </div>
             </div>
