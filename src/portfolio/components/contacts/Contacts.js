@@ -38,7 +38,7 @@ export const Contacts = () => {
             </div>
             <div className="col-lg-6 order-1 order-lg-2">
               <div className="thumbnail">
-                <img src="https://trydo.rainbowit.net/assets/images/about/about-9.jpg" alt="photo"/>
+                <img src="" alt="photo"/>
               </div>
             </div>
           </div>
@@ -47,3 +47,5 @@ export const Contacts = () => {
     </div>
   );
 }
+
+// https://trydo.rainbowit.net/assets/images/about/about-9.jpg

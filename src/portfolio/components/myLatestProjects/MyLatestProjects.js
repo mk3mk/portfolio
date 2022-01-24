@@ -5,6 +5,31 @@ import {Title} from "../../commons/title/Title";
 import {Button} from "../../commons/button/Button";
 
 export const MyLatestProjects = () => {
+  const initialProjects = [
+    {
+      title: "Getting tickets to the big show",
+      urlImage: "https://trydo.rainbowit.net/assets/images/portfolio/portfolio-1.jpg",
+      technologies: "Development",
+      urlGitPage: "#",
+      urlGitRepo: "#",
+    },
+    {
+      title: "Getting tickets to the big show",
+      urlImage: "https://trydo.rainbowit.net/assets/images/portfolio/portfolio-1.jpg",
+      technologies: "Development",
+      urlGitPage: "#",
+      urlGitRepo: "#",
+    },
+    {
+      title: "Getting tickets to the big show",
+      urlImage: "https://trydo.rainbowit.net/assets/images/portfolio/portfolio-1.jpg",
+      technologies: "Development",
+      urlGitPage: "#",
+      urlGitRepo: "#",
+    },
+  ]
+
+
   return (
     <div id="projects" className="portfolio">
       <div className="container">
@@ -15,19 +40,18 @@ export const MyLatestProjects = () => {
           </div>
         </div>
         <div className="row">
-          <Project title={"Getting tickets to the big show"}
-                   urlImage={"https://trydo.rainbowit.net/assets/images/portfolio/portfolio-1.jpg"}
-                   technologies={"Development"}/>
-          <Project title={"Getting tickets to the big show"}
-                   urlImage={"https://trydo.rainbowit.net/assets/images/portfolio/portfolio-1.jpg"}
-                   technologies={"Development"}/>
-          <Project title={"Getting tickets to the big show"}
-                   urlImage={"https://trydo.rainbowit.net/assets/images/portfolio/portfolio-1.jpg"}
-                   technologies={"Development"}/>
+          {
+            initialProjects.map(p => <Project title={p.title}
+                                              urlImage={p.urlImage}
+                                              technologies={p.technologies}
+                                              urlGitPage={p.urlGitPage}
+                                              urlGitRepo={p.urlGitRepo}
+            /> )
+          }
         </div>
         <div className="row">
           <div className="col-lg-12">
-            <Button btnName={"View more"} btnClass={"view-more-btn"}/>
+            <Button btnName={"View more"} btnClass={"view-more-btn"} url={"https://github.com/alexeynikinitin"}/>
           </div>
         </div>
       </div>

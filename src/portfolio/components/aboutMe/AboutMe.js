@@ -30,10 +30,11 @@ export const AboutMe = ({urlImg}) => {
             <div className="col-lg-7">
               <div className="inner">
                 <Title title={"About Me"}
-                       subtitle={"There are many variations of passages of Lorem Ipsum available, " +
-                       "but the majority have suffered in some form, by injected humour, " +
-                       "or randomised words which dont look even slightly believable. " +
-                       "If you are going to use a passage of Lorem Ipsum"}/>
+                       subtitle={"I have a strong desire and desire for programming. " +
+                       "I have some experience in building single page applications using technologies " +
+                       "like React/Redux/TypeScript. I like to work in a team and achieve my goals in the " +
+                       "shortest possible time and with the highest quality. Improving my skills " +
+                       "in front-end development"}/>
                 <div className="row section_info">
                   <div className="col-lg-12">
                     <ul className="tabs">
@@ -48,7 +49,6 @@ export const AboutMe = ({urlImg}) => {
                           />
                         )
                       })}
-
                     </ul>
                   </div>
                   <TabPanel clicked={true} tabs={tabs}/>

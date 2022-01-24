@@ -1,18 +1,20 @@
 .skill {
-  padding: 25px;
-  flex-basis: 20%;
+  padding: 30px;
+  flex-basis: 30%;
   text-align: center;
+  filter: grayscale(90%);
+  transition: .3s;
+
   &_img {
-    filter: grayscale(50%);
-    transition: .3s;
     max-height: 110px;
     max-width: 150px;
     cursor: pointer;
     border: 0;
     vertical-align: middle;
-    &:hover {
-      transform: scale(1.1);
-      filter: grayscale(0%);
-    }
+
+  }
+  &:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
   }
 }

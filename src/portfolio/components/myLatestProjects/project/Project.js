@@ -1,13 +1,14 @@
 import React from 'react';
 import './project.scss'
 import {Button} from "../../../commons/button/Button";
-// import Image from "../../../assets/myLatestProjects/project-1.jpg"
 
 export const Project = (
   {
     title,
     technologies,
     urlImage,
+    urlGitPage,
+    urlGitRepo,
   }
 ) => {
   return (
@@ -22,12 +23,11 @@ export const Project = (
           <div className="inner">
             <p>{technologies}</p>
             <h4>
-              <a href="#">{title}</a>
+              <a href={urlGitPage}>{title}</a>
             </h4>
-            <Button btnName={"View details"} btnClass={"project_btn"}/>
+            <Button btnName={"View details"} btnClass={"project_btn"} url={urlGitRepo}/>
           </div>
         </div>
-        <a href="#" className="link-overlay"></a>
       </div>
 
     </div>

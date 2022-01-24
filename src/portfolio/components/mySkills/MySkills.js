@@ -15,6 +15,18 @@ import ts from './../../assets/mySkills/logos_typescript.png'
 import {Skill} from "./skill/Skill";
 
 export const MySkills = () => {
+  const initialSkills = [
+    antDesign,
+    bootstrap,
+    css3,
+    html5,
+    js,
+    mui,
+    react,
+    redux,
+    ts,
+  ]
+
   return (
     <div id="skills" className="my_skills">
       <div className="container">
@@ -25,15 +37,9 @@ export const MySkills = () => {
         <div className="row">
           <div className="col-lg-12">
             <ul className="my_skills_section">
-              <Skill urlImg={antDesign}/>
-              <Skill urlImg={bootstrap}/>
-              <Skill urlImg={css3}/>
-              <Skill urlImg={html5}/>
-              <Skill urlImg={js}/>
-              <Skill urlImg={mui}/>
-              <Skill urlImg={react}/>
-              <Skill urlImg={redux}/>
-              <Skill urlImg={ts}/>
+              {
+                initialSkills.map(s => <Skill urlImg={s}/> )
+              }
             </ul>
           </div>
         </div>
