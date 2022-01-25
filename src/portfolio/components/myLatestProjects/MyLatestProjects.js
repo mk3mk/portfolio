@@ -40,13 +40,13 @@ export const MyLatestProjects = () => {
         </div>
         <div className="row">
           {
-            initialProjects.map((p,i) => <Project title={p.title}
-                                              urlImage={p.urlImage}
-                                              technologies={p.technologies}
-                                              urlGitPage={p.urlGitPage}
-                                              urlGitRepo={p.urlGitRepo}
-                                              key={`${i}-${p.title}`}
-            /> )
+            initialProjects.map((p, i) => <Project title={p.title}
+                                                   urlImage={p.urlImage}
+                                                   technologies={p.technologies}
+                                                   urlGitPage={p.urlGitPage}
+                                                   urlGitRepo={p.urlGitRepo}
+                                                   key={`${i}-${p.title}`}
+            />)
           }
         </div>
         <div className="row">
