@@ -1,10 +1,11 @@
 import React from 'react';
 import './home.scss'
+import homeImg from './../../assets/home/bg-home-image.jpg'
 
-export const Home = ({urlImage}) => {
+export const Home = () => {
 
   return (
-    <div id="home" className="home " style={{ backgroundImage: `url(${urlImage})` }}>
+    <div id="home" className="home " style={{ backgroundImage: `url(${homeImg})` }}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

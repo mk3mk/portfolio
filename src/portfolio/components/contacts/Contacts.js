@@ -2,7 +2,7 @@ import React from 'react';
 import './contacts.scss'
 import './../../commons/button/button.scss'
 
-export const Contacts = ({urlImg}) => {
+export const Contacts = () => {
   return (
     <div id="contacts" className="contact">
       <div className="contact_form">
@@ -39,7 +39,7 @@ export const Contacts = ({urlImg}) => {
             </div>
             <div className="col-lg-6 order-1 order-lg-2 ">
               <div className="thumbnail">
-                <img src={urlImg} alt="photo"/>
+                <img src={"https://trydo.rainbowit.net/assets/images/about/about-9.jpg"} alt="photo"/>
               </div>
             </div>
           </div>

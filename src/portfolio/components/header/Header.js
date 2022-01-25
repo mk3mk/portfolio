@@ -6,12 +6,15 @@ import logo from './../../assets/header-footer/logo-red.png'
 import facebook from "../../assets/socialIcon/bx_bxl-facebook.png";
 import linkedIn from "../../assets/socialIcon/bx_bxl-linkedin.png";
 import instagram from "../../assets/socialIcon/bx_bxl-instagram.png";
-// import telegram from "../../assets/socialIcon/bx_bxl-telegram.png";
 import {Button} from "../../commons/button/Button";
 import Scrollspy from 'react-scrollspy'
+import menuitem from './../../assets/header-footer/menu-hamburger.png'
+import closeMenuItem from './../../assets/header-footer/close-menu-icon.png'
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -21,7 +24,9 @@ export const Header = () => {
 
   const fullClassHeader = `header ${isScrolled ? "sticky_header" : ""}`
   const fullClassHeaderWrapper = `header_wrapper  d-flex justify-content-between align-items-center ${isScrolled ? "sticky_wrapper" : ""}`
-
+  const fullClassMenuNav = `main_menu ${isVisible ? "main_menu_open" : "main_menu_close"}`
+  const fullClassCloseMenuItem = `close_menu d-block d-lg-none ${isVisible ? "close_menu_open" : "close_menu_close"}`
+  const fullClassBurgerMenu = `hamburger_menu d-block d-lg-none ${isVisible ? "hamburger_menu_close" : "hamburger_menu_open"}`
   return (
     <header className={fullClassHeader}>
       <div className={fullClassHeaderWrapper}>
@@ -30,12 +35,12 @@ export const Header = () => {
             <img src={logo} alt=""/>
           </div>
           <nav className="menu_nav">
-            <Scrollspy className="main_menu" items={['home','about','skills','projects','contacts']} currentClassName="is-current" offset={-200}>
-              <li className="nav_item"><a href={"#home"}>Home</a></li>
-              <li className="nav_item"><a href={"#about"}>About</a></li>
-              <li className="nav_item"><a href={"#skills"}>Skills</a></li>
-              <li className="nav_item"><a href={"#projects"}>Projects</a></li>
-              <li className="nav_item"><a href={"#contacts"}>Contacts</a></li>
+            <Scrollspy className={fullClassMenuNav} items={['home','about','skills','projects','contacts']} currentClassName="is-current" offset={-200}>
+              <li className="nav_item"><a href={"#home"} onClick={() => setIsVisible(false)}>Home</a></li>
+              <li className="nav_item"><a href={"#about"} onClick={() => setIsVisible(false)}>About</a></li>
+              <li className="nav_item"><a href={"#skills"} onClick={() => setIsVisible(false)}>Skills</a></li>
+              <li className="nav_item"><a href={"#projects"} onClick={() => setIsVisible(false)}>Projects</a></li>
+              <li className="nav_item"><a href={"#contacts"} onClick={() => setIsVisible(false)}>Contacts</a></li>
             </Scrollspy>
           </nav>
         </div>
@@ -46,6 +51,16 @@ export const Header = () => {
             <SocialIcon urlIcon={instagram} urlSocial={"https://instagram.com/alexalex_2576?utm_medium=copy_link"}/>
           </ul>
           <Button btnName={"Call me"} btnClass={"header_btn"} url={"tel:+375292592648"}/>
+          <div className={fullClassBurgerMenu}>
+            <div className="menutrigger" onClick={() => {setIsVisible(true)}}>
+              <img src={menuitem} alt="menu"/>
+            </div>
+          </div>
+          <div className={fullClassCloseMenuItem}>
+            <div className="closeTrigger" onClick={() => {setIsVisible(false)}}>
+              <img src={closeMenuItem} alt="close-menu"/>
+            </div>
+          </div>
         </div>
       </div>
     </header>

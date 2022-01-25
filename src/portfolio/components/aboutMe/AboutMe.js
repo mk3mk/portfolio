@@ -3,8 +3,10 @@ import './aboutMe.scss'
 import {Title} from "../../commons/title/Title";
 import {Tab} from "../../commons/tabs/tab/Tab";
 import {TabPanel} from "../../commons/tabs/tabpanel/TabPanel";
+import aboutImg from './../../assets/aboutMe/about-image.jpg'
 
-export const AboutMe = ({urlImg}) => {
+export const AboutMe = () => {
+
   const initialTabs = [
     {id: 1, title: "Main Skills", selected: true},
     {id: 2, title: "Awards", selected: false},
@@ -24,7 +26,7 @@ export const AboutMe = ({urlImg}) => {
           <div className="row align-items-center">
             <div className="col-lg-5">
               <div className="thumbnail">
-                <img src={urlImg} alt="photo"/>
+                <img src={aboutImg} alt="photo"/>
               </div>
             </div>
             <div className="col-lg-7">

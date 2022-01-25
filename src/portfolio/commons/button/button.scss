@@ -146,6 +146,9 @@
   position: relative;
   z-index: 2;
   transition: all .4s ease-in-out 0s;
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   &:hover {
     border-color: #f9004d;
