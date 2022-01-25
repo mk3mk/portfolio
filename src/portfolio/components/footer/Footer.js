@@ -12,21 +12,21 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer_wrapper">
         <div className="row align-items-center justify-content-between">
-          <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+          <div className="col-lg-4 col-md-4 col-sm-6 col-12">
             <div className="logo">
               <a href="#">
                 <img src={logo} alt="Logo"/>
               </a>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+          <div className="col-lg-4 col-md-4 col-sm-6 col-12">
             <ul className="social_share d-flex justify-content-center">
               <SocialIcon urlIcon={linkedIn} urlSocial={"https://www.linkedin.com/in/alexeinikitin/"}/>
               <SocialIcon urlIcon={instagram} urlSocial={"https://instagram.com/alexalex_2576?utm_medium=copy_link"}/>
               <SocialIcon urlIcon={facebook} urlSocial={"#"}/>
             </ul>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+          <div className="col-lg-4 col-md-4 col-sm-6 col-12">
             <div className="text">
               <p>
                 Alexey Nikitin

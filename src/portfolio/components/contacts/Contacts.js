@@ -12,10 +12,11 @@ export const Contacts = ({urlImg}) => {
               <div className="contact_title">
                 <h2>Hire Me.</h2>
                 <p className="description">
-                  I am available for freelance work. Connect with me via phone:
-                  <a href="tel:+375292592648"> 8 029 259-26-48 </a>
-                  or email:
-                  <a href="mailto:alexeynikinitin@yandex.by"> alexeynikinitin@yandex.by </a>
+                  {`I am available for freelance work. Connect with me via phone: ` }
+                  <a href="tel:+375292592648">8 029 259-26-48</a>
+                  {` or email: `}
+                  <a href="mailto:alexeynikinitin@yandex.by">alexeynikinitin@yandex.by</a>
+
                 </p>
               </div>
               <div className="form_wrapper text-lg-start">

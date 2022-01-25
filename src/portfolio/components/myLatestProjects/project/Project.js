@@ -12,7 +12,7 @@ export const Project = (
   }
 ) => {
   return (
-    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+    <div className="col-lg-4 col-md-4 col-sm-6 col-12">
       <div className="project">
         <div className="thumbnail-inner">
           <div className="thumbnail"

@@ -4,6 +4,9 @@
   @media (max-width: 1400px) {
     padding: 20px 0;
   }
+  @media (max-width: 992px) {
+    padding: 15px 0;
+  }
   &_wrapper {
     padding: 0 50px;
     .logo {
@@ -11,9 +14,18 @@
       width: 60px;
       height: 60px;
       background-color: #282c34;
+      @media (max-width: 992px) {
+        width: 40px;
+        height: 40px;
+      }
       img {
         max-width: 100%;
         border: none;
+      }
+    }
+    .social_share {
+      @media (max-width: 768px) {
+        justify-content: right!important;
       }
     }
     .text {
@@ -21,7 +33,10 @@
       p {
         color: #c6c9d8;
         font-size: 14px;
-        opacity: .75
+        opacity: .75;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
