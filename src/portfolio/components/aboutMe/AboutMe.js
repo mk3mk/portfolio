@@ -3,7 +3,7 @@ import './aboutMe.scss'
 import {Title} from "../../commons/title/Title";
 import {Tab} from "../../commons/tabs/tab/Tab";
 import {TabPanel} from "../../commons/tabs/tabpanel/TabPanel";
-import aboutImg from './../../assets/aboutMe/about-image.jpg'
+import aboutImg from './../../assets/aboutMe/foto2.jpg'
 
 export const AboutMe = () => {
 

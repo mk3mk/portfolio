@@ -7,6 +7,7 @@ import instagram from './../../assets/socialIcon/bx_bxl-instagram.png'
 import telegram from './../../assets/socialIcon/bx_bxl-telegram.png'
 import logo from './../../assets/header-footer/logo-red.png'
 
+
 export const Footer = () => {
   return (
     <footer className="footer">

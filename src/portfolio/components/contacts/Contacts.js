@@ -1,6 +1,7 @@
 import React from 'react';
 import './contacts.scss'
 import './../../commons/button/button.scss'
+import photo from './../../assets/footer/foro3.jpg'
 
 export const Contacts = () => {
   return (
@@ -39,7 +40,7 @@ export const Contacts = () => {
             </div>
             <div className="col-lg-6 order-1 order-lg-2 ">
               <div className="thumbnail">
-                <img src={"https://trydo.rainbowit.net/assets/images/about/about-9.jpg"} alt="photo"/>
+                <img src={photo} alt="photo"/>
               </div>
             </div>
           </div>
