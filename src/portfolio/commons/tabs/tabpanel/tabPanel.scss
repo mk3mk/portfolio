@@ -2,7 +2,7 @@
   display: none;
   height: 238px;
   @media (max-width: 992px) {
-    margin: 0 113px;
+    margin: 0 106px;
   }
   @media (max-width: 768px) {
     margin: 0;
@@ -26,6 +26,12 @@
       span:last-child {
         font-weight: 300;
         display: block;
+      }
+    }
+    .personal_quality {
+      &_item {
+        font-weight: 500;
+        margin-bottom: 0;
       }
     }
   }

@@ -35,7 +35,7 @@ export const MyLatestProjects = () => {
         <div className="row">
           <div className="col-lg-12">
             <Title title={"My Latest Project"}
-                   subtitle={"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."}/>
+                   subtitle={"Jobs that I have done in my career"}/>
           </div>
         </div>
         <div className="row">

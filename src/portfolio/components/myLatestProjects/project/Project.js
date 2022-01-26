@@ -23,7 +23,7 @@ export const Project = (
           <div className="inner">
             <p>{technologies}</p>
             <h4>
-              <a href={urlGitPage}>{title}</a>
+              <a href={urlGitPage} target="_blank">{title}</a>
             </h4>
             <Button btnName={"View details"} btnClass={"project_btn"} url={urlGitRepo}/>
           </div>

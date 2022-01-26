@@ -28,34 +28,46 @@ export const TabPanel = ({tabs}) => {
 
       <div className={`tab_panel ${tabs[1].selected ? "visible" : ""}`}>
         <ul>
-          <li>
-            <span>Awards.com</span>
-            <span> - Winner</span>
-            <p>2019 - 2020</p>
+          <li className="personal_quality">
+            <p className="personal_quality_item">Independence</p>
+            <p className="personal_quality_item">Stress resistance</p>
+            <p className="personal_quality_item">A responsibility</p>
+            <p className="personal_quality_item">Attentiveness</p>
+            <p className="personal_quality_item">Mobility</p>
           </li>
-          <li>
-            <span>User experience design</span>
-            <p>2017 - 2018</p>
-          </li>
+          {/*<li>*/}
+          {/*  <span>Initiative</span>*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  <span>Stress resistance</span>*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  <span>Energy</span>*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  <span>A responsibility</span>*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  <span>Attentiveness</span>*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  <span>Creativity</span>*/}
+          {/*</li>*/}
+
         </ul>
       </div>
 
       <div className={`tab_panel ${tabs[2].selected ? "visible" : ""}`}>
         <ul>
           <li>
-            <span>Sr. Front-end Engineer</span>
-            <span> - Google</span>
-            <p>2018 - Current</p>
+            <span>Front-end developer</span>
+            <span> - IT-Incubator</span>
+            <p>2021 - current</p>
           </li>
           <li>
-            <span>Front-end Engineer</span>
-            <span> - Microsoft</span>
-            <p>2017 - 2018</p>
-          </li>
-          <li>
-            <span>Software Engineer</span>
-            <span> - Alibaba</span>
-            <p>2013 - 2014</p>
+            <span>Serviceman</span>
+            <span> - Ministry of Defence</span>
+            <p>2017 - 2021</p>
           </li>
         </ul>
       </div>
@@ -65,7 +77,7 @@ export const TabPanel = ({tabs}) => {
           <li>
             <span>Front-end developer</span>
             <span> - IT-Incubator</span>
-            <p>2021 - now</p>
+            <p>2021 - current</p>
           </li>
           <li>
             <span>Back-end developer</span>

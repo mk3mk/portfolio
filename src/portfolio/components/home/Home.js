@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.scss'
 // import homeImg from './../../assets/home/bg-home-image.jpg'
-import homeImg from './../../assets/home/foto1.jpg'
+import homeImg from './../../assets/home/foto2.jpg'
 
 export const Home = () => {
 

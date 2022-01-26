@@ -1,7 +1,7 @@
 import React from 'react';
 import './contacts.scss'
 import './../../commons/button/button.scss'
-import photo from './../../assets/footer/foro3.jpg'
+import photo from './../../assets/footer/foto3.jpg'
 
 export const Contacts = () => {
   return (
@@ -11,9 +11,9 @@ export const Contacts = () => {
           <div className="row align-items-start">
             <div className="col-lg-6 order-2 order-lg-1">
               <div className="contact_title">
-                <h2>Hire Me.</h2>
+                <h2>Contact Me.</h2>
                 <p className="description">
-                  {`I am available for freelance work. Connect with me via phone: ` }
+                  {`I am available for work. Connect with me via phone: ` }
                   <a href="tel:+375292592648">8 029 259-26-48</a>
                   {` or email: `}
                   <a href="mailto:alexeynikinitin@yandex.by">alexeynikinitin@yandex.by</a>

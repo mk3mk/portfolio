@@ -9,7 +9,7 @@ export const AboutMe = () => {
 
   const initialTabs = [
     {id: 1, title: "Main Skills", selected: true},
-    {id: 2, title: "Awards", selected: false},
+    {id: 2, title: "Qualities", selected: false},
     {id: 3, title: "Experience", selected: false},
     {id: 4, title: "Education", selected: false},
   ]
