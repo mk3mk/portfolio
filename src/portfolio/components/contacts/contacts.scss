@@ -100,6 +100,24 @@
         textarea {
           height: 120px;
         }
+
+        .errorName {
+          border-color: #f9004d;
+        }
+
+        .errorEmail {
+          border-color: #f9004d;
+        }
+      }
+
+      .disableBtn {
+        background-color: #f9004d;
+        opacity: 0.5;
+        &:hover {
+          transition: none;
+          transform: none;
+          color: white;
+        }
       }
     }
   }

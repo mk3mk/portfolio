@@ -1,9 +1,54 @@
-import React from 'react';
 import './contacts.scss'
+import axios from "axios";
+import {useFormik} from "formik";
+import React, {useState} from 'react';
 import './../../commons/button/button.scss'
+import Modal from "../../commons/modal/Modal";
 import photo from './../../assets/footer/foto3.jpg'
 
 export const Contacts = () => {
+  const [isShow, setIsShow] = useState(false)
+  const [isDisable, setIsDisable] = useState(false)
+
+  const formik = useFormik({
+    initialValues: {
+      name: '',
+      email: '',
+      message: '',
+    },
+    validate: (values) => {
+      const errors = {};
+      if (!values.email) {
+        errors.email = 'Required';
+      } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+        errors.email = 'Invalid email address';
+      }
+      if (!values.name) {
+        errors.name = 'Required';
+      }
+      return errors;
+    },
+    onSubmit: async (messageData) => {
+      try {
+        setIsDisable(true)
+        const {resultCode} = await axios.post("http://localhost:3010/send-message", messageData).then((res) => res.data)
+        if (resultCode === 0) {
+          formik.resetForm()
+          setIsShow(true)
+          setTimeout(() => {setIsShow(false)}, 3000)
+        }
+      } catch (e) {
+        console.log(e)
+      } finally {
+        setIsDisable(false)
+      }
+    },
+  });
+
+  const errorNameClassName = formik.touched.name && formik.errors.name && "errorName"
+  const errorEmailClassName = formik.touched.email && formik.errors.email && "errorEmail"
+  const disableBtnClassName = (errorNameClassName || errorEmailClassName) && "disableBtn"
+
   return (
     <div id="contacts" className="contact">
       <div className="contact_form">
@@ -17,24 +62,20 @@ export const Contacts = () => {
                   <a href="tel:+375292592648">8 029 259-26-48</a>
                   {` or email: `}
                   <a href="mailto:alexeynikinitin@yandex.by">alexeynikinitin@yandex.by</a>
-
                 </p>
               </div>
               <div className="form_wrapper text-lg-start">
-                <form action="">
-                  <label htmlFor="item01">
-                    <input type="text" id="item01" name="name" placeholder="Your Name *" value={""}/>
+                <form onSubmit={formik.handleSubmit}>
+                  <label>
+                    <input className={errorNameClassName} type="text" placeholder="Your Name *" {...formik.getFieldProps('name')}/>
                   </label>
-                  <label htmlFor="item02">
-                    <input type="text" id="item02" name="email" placeholder="Your email *" value={""}/>
+                  <label>
+                    <input className={errorEmailClassName} type="email" placeholder="Your email *" {...formik.getFieldProps('email')}/>
                   </label>
-                  <label htmlFor="item03">
-                    <input type="text" id="item03" name="subject" placeholder="Write a Subject" value={""}/>
+                  <label>
+                    <textarea placeholder="Your Message" {...formik.getFieldProps('message')}/>
                   </label>
-                  <label htmlFor="item04">
-                    <textarea id="item04" name="message" placeholder="Your Message" value={""}/>
-                  </label>
-                  <button type="submit" value="submit" name="submit" className="btn contact-btn">Submit</button>
+                  <button type="submit" className={`btn contact-btn ${disableBtnClassName}`} disabled={isDisable}>Submit</button>
                 </form>
               </div>
             </div>
@@ -46,6 +87,23 @@ export const Contacts = () => {
           </div>
         </div>
       </div>
+      <Modal
+        show={isShow}
+        width={600}
+        height={300}
+        backgroundOnClick={() => setIsShow(false)}
+        modalStyle={{
+          color: "#fff",
+          padding: "20px",
+          fontSize: "24px",
+          borderRadius: "5px",
+          backgroundColor: "#191919",
+          border: "2px solid hsla(0, 0%, 100%, .2)"
+        }}
+      >
+        <p>Сообщение отправлено мне на почту.</p>
+        <p>Я свяжусь с Вами когда у меня появится свободная минутка</p>
+      </Modal>
     </div>
   );
 }

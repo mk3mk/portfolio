@@ -24,7 +24,7 @@ export const MyLatestProjects = () => {
       title: "Portfolio",
       urlImage: "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
       technologies: "React/JavaScript/SCSS",
-      urlGitPage: "#",
+      urlGitPage: "https://alexeynikinitin.github.io/portfolio/",
       urlGitRepo: "https://github.com/alexeynikinitin/portfolio",
     },
   ]
