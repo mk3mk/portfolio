@@ -31,7 +31,7 @@ export const Contacts = () => {
     onSubmit: async (messageData) => {
       try {
         setIsDisable(true)
-        const {resultCode} = await axios.post("http://localhost:3010/send-message", messageData).then((res) => res.data)
+        const {resultCode} = await axios.post("https://smtp-server-app.herokuapp.com/send-message", messageData).then((res) => res.data)
         if (resultCode === 0) {
           formik.resetForm()
           setIsShow(true)
