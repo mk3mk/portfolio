@@ -9,7 +9,6 @@ import {Home} from "./portfolio/components/home/Home";
 import {Header} from "./portfolio/components/header/Header"
 
 export const App = () => {
-
   return (
     <div className="App">
       <Header/>
