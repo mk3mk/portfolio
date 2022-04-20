@@ -9,13 +9,16 @@ export const AboutMe = () => {
 
   const initialTabs = [
     {id: 1, title: "Main Skills", selected: true},
-    {id: 2, title: "Qualities", selected: false},
+    {id: 2, title: "Skills", selected: false},
     {id: 3, title: "Experience", selected: false},
     {id: 4, title: "Education", selected: false},
   ]
   const [tabs, setTabs] = useState(initialTabs)
   const changeSelectTabCallback = (id, selected) => {
-    const newTabs = tabs.map(tab => tab.id === id ? {...tab, selected: selected} : {...tab, selected: false})
+    const newTabs = tabs.map(tab => tab.id === id ? {
+      ...tab,
+      selected: selected
+    } : {...tab, selected: false})
     setTabs(newTabs)
   }
 
@@ -32,11 +35,12 @@ export const AboutMe = () => {
             <div className="col-lg-7">
               <div className="inner">
                 <Title title={"About Me"}
-                       subtitle={"I have a strong desire and desire for programming. " +
-                       "I have some experience in building single page applications using technologies " +
-                       "like React/Redux/TypeScript. I like to work in a team and achieve my goals in the " +
-                       "shortest possible time and with the highest quality. Improving my skills " +
-                       "in front-end development"}/>
+                       subtitle={"I’d describe myself as a goal-oriented and hardworking person with experience in creating\n" +
+                       "SPA, using" +
+                       "React(JS/TS), Redux, HTML & CSS. Now " +
+                       "I am improving my skills in this " +
+                       "direction and expanding them with " +
+                       "new technologies. In the future, I would like to become a full-stack developer."}/>
                 <div className="row section_info">
                   <div className="col-lg-12">
                     <ul className="tabs">

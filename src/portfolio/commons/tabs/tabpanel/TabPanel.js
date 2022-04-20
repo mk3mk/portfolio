@@ -9,7 +9,7 @@ export const TabPanel = ({tabs}) => {
         <ul>
 
           <li>
-            <span>Software development</span>
+            <span>Front-end  developer</span>
             <span> - Development</span>
             <p>React / Redux / Type Script</p>
           </li>
@@ -29,31 +29,15 @@ export const TabPanel = ({tabs}) => {
       <div className={`tab_panel ${tabs[1].selected ? "visible" : ""}`}>
         <ul>
           <li className="personal_quality">
-            <p className="personal_quality_item">Independence</p>
-            <p className="personal_quality_item">Stress resistance</p>
-            <p className="personal_quality_item">A responsibility</p>
-            <p className="personal_quality_item">Attentiveness</p>
-            <p className="personal_quality_item">Mobility</p>
+            <p className="personal_quality_item">Creation Web apps using ReactJs with
+              TypeScript and various libraries</p>
+            <p className="personal_quality_item">Using Redux and Redux-toolkit to manage application state</p>
+            <p className="personal_quality_item">Cross-browser, adaptive, responsive development with CSS-preprocessors, Material UI and And Design libraries</p>
+            <p className="personal_quality_item">Implementation of multilingual application using localization management platform</p>
+            <p className="personal_quality_item">Сheck the correctness of the code with Unit Tests and take Storybook for demonstration of individual
+              modules of the application</p>
+            <p className="personal_quality_item">Creation of applications with login and registration forms, as well as functionality with the ability to add, delete, change and filter data.</p>
           </li>
-          {/*<li>*/}
-          {/*  <span>Initiative</span>*/}
-          {/*</li>*/}
-          {/*<li>*/}
-          {/*  <span>Stress resistance</span>*/}
-          {/*</li>*/}
-          {/*<li>*/}
-          {/*  <span>Energy</span>*/}
-          {/*</li>*/}
-          {/*<li>*/}
-          {/*  <span>A responsibility</span>*/}
-          {/*</li>*/}
-          {/*<li>*/}
-          {/*  <span>Attentiveness</span>*/}
-          {/*</li>*/}
-          {/*<li>*/}
-          {/*  <span>Creativity</span>*/}
-          {/*</li>*/}
-
         </ul>
       </div>
 
@@ -61,13 +45,13 @@ export const TabPanel = ({tabs}) => {
         <ul>
           <li>
             <span>Front-end developer</span>
-            <span> - IT-Incubator</span>
-            <p>2021 - current</p>
+            <span> - Learning app “Memorization Cards</span>
+            <p>02/2022 - present</p>
           </li>
           <li>
-            <span>Serviceman</span>
-            <span> - Ministry of Defence</span>
-            <p>2017 - 2021</p>
+            <span>Front-end  developer</span>
+            <span> - Social project “Ta Na”</span>
+            <p>08/2021 - 02/2022</p>
           </li>
         </ul>
       </div>
@@ -77,7 +61,12 @@ export const TabPanel = ({tabs}) => {
           <li>
             <span>Front-end developer</span>
             <span> - IT-Incubator</span>
-            <p>2021 - current</p>
+            <p>2021 - 2022</p>
+          </li>
+          <li>
+            <span>HTML5 / CSS3</span>
+            <span> - Brainscloud</span>
+            <p>2021</p>
           </li>
           <li>
             <span>Back-end developer</span>

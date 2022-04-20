@@ -9,15 +9,15 @@ export const MyLatestProjects = () => {
     {
       title: "Social network",
       urlImage: "https://media.istockphoto.com/photos/social-media-concept-picture-id1205703732?k=20&m=1205703732&s=612x612&w=0&h=RjnvKZW_InJ73SoPzQVA8qj5bcg6_0yBgPx_JUtrn2k=",
-      technologies: "React/Redux/TypeScript",
+      technologies: "React/Redux/TypeScript/Ant Design",
       urlGitPage: "#",
       urlGitRepo: "https://github.com/alexeynikinitin/social-network",
     },
     {
       title: "Todo List",
       urlImage: "https://media.gettyimages.com/photos/to-do-list-on-notebook-page-with-laptop-and-coffee-mug-picture-id1077341604?s=612x612",
-      technologies: "React/TypeScript/Hooks/Material UI",
-      urlGitPage: "#",
+      technologies: "React/Redux-toolkit/TypeScript/Hooks/MUI",
+      urlGitPage: "https://alexeynikinitin.github.io/todolist",
       urlGitRepo: "https://github.com/alexeynikinitin/todolist",
     },
     {
@@ -26,6 +26,27 @@ export const MyLatestProjects = () => {
       technologies: "React/JavaScript/SCSS",
       urlGitPage: "https://alexeynikinitin.github.io/portfolio/",
       urlGitRepo: "https://github.com/alexeynikinitin/portfolio",
+    },
+    {
+      title: "Memorization Cards",
+      urlImage: "https://www.imperfecthomemaker.com/wp-content/uploads/2016/01/abc-verses.jpg",
+      technologies: "React/TypeScript/Redux/Axios",
+      urlGitPage: "https://FoxSide.github.io/friday-project",
+      urlGitRepo: "https://github.com/FoxSide/friday-project",
+    },
+    {
+      title: "Counter",
+      urlImage: "https://www.u-buy.com.ua/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNjFTWDNxajV0OUwuX0FDX1NMMTUwMF8uanBn.jpg",
+      technologies: "React/TypeScript/Redux/Local Storage",
+      urlGitPage: "#",
+      urlGitRepo: "https://github.com/alexeynikinitin/exams",
+    },
+    {
+      title: "Gallery site",
+      urlImage: "https://www.photo.gallery/content/1.index/x3-photo-gallery-website.jpg",
+      technologies: "React/TypeScript/Redux/Redux-Saga/Bootstrap",
+      urlGitPage: " https://alexeynikinitin.github.io/mitrasoft__test/",
+      urlGitRepo: "https://github.com/alexeynikinitin/mitrasoft__test",
     },
   ]
 
